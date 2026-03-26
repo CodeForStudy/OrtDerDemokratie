@@ -1,0 +1,128 @@
+.hero-title {
+    margin: 0 0 0.8rem;
+    font-size: clamp(1.5rem, 2.4vw, 2.2rem);
+    color: #1b3c5a;
+    text-align: center;
+}
+
+.info-intro {
+    padding: 1.8rem;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 12px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+    margin: 1.3rem 0;
+}
+
+.info-grid {
+    display: grid;
+    grid-template-columns: 1fr minmax(200px, 300px);
+    gap: 1.5rem;
+    align-items: flex-start;
+}
+
+.info-image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.14);
+}
+
+.info-text h2 {
+    margin-top: 0;
+    font-size: 1.9rem;
+    color: #1f3f61;
+}
+
+.info-text h3 {
+    margin: 1.2rem 0 0.5rem;
+    font-size: 1.25rem;
+    color: #2c4c6d;
+    border-left: 4px solid #3498db;
+    padding-left: 0.65rem;
+}
+
+.info-text h4 {
+    margin: 0.8rem 0 0.35rem;
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: #2f4f72;
+}
+
+.info-text p {
+    margin: 0.45rem 0 0.95rem;
+    line-height: 1.65;
+    letter-spacing: 0.01em;
+    font-size: 1rem;
+    color: #34495e;
+}
+
+.info-hero {
+    display: block;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+.info-hero img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 12px;
+    border: 1px solid rgba(0,0,0,0.12);
+    display: block;
+}
+
+.hero-heading {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.45);
+}
+
+.hero-heading h2 {
+    margin: 0;
+    font-size: clamp(1.6rem, 2.5vw, 2.4rem);
+}
+
+.info-content {
+    background: #ffffff;
+    border-radius: 10px;
+    padding: 1.2rem 1.3rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    margin-bottom: 1.5rem;
+}
+
+.info-content h2 {
+    margin: 1.2rem 0 0.6rem;
+    font-size: 1.45rem;
+    color: #244262;
+    border-left: none;
+    padding-left: 0;
+    border-bottom: 1px solid #dbe5f0;
+    padding-bottom: 0.35rem;
+    font-weight: 700;
+}
+
+.info-content h3 {
+    margin: 0.9rem 0 0.45rem;
+    font-size: 1.14rem;
+    color: #2f4f72;
+    border: none;
+}
+
+.info-content p {
+    margin: 0.45rem 0 0.95rem;
+    line-height: 1.72;
+    color: #37495d;
+}
+
+@media (max-width: 800px) {
+    .info-hero, .info-content {
+        margin: 0.8rem 0;
+    }
+    .hero-heading h2 { font-size: 1.7rem; }
+    .info-content h2 { font-size: 1.32rem; }
+}
