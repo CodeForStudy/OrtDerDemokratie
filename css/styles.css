@@ -206,6 +206,17 @@ footer {
     color: white;
 }
 
+footer a {
+    color: #b8d4ed;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+footer a:hover {
+    color: #f0f6ff;
+    text-decoration: underline;
+}
+
 .criteria-table {
     width: 100%;
     border-collapse: collapse;
